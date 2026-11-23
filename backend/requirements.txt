@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+python-multipart
+google-genai
+python-jose[cryptography]
+bcrypt
+sqlalchemy
+pymupdf
+pytesseract
+pillow
+python-docx
+openpyxl
+pdfplumber
+httpx

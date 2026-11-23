@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: ori-forms
+    runtime: docker
+    plan: free
+    envVars:
+      - key: EXTRACT_PROVIDER
+        value: groq
+      - key: GROQ_API_KEY
+        sync: false
+      - key: GROQ_MODEL
+        value: openai/gpt-oss-120b
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-3.8-flash
+      - key: GEMINI_FALLBACK_MODEL
+        value: ""
+      - key: ORI_JWT_SECRET
+        generateValue: true
+      - key: ORI_ALLOWED_EMAIL_DOMAIN
+        value: ""
+      - key: ORI_ADMIN_EMAILS
+        sync: false
